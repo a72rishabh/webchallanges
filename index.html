@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="C:\Users\HP\Desktop\JAVASCRIPT\static\assets\style.css">
+    <title>JavaScript Challanges</title>
+</head>
+<body>
+    <div class="container-1">
+    <h2>Challenge 1 : Your Age In Days</h2>
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="ageInDays()">Click Me</button>
+            </div>
+
+            <div>
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+        </div>
+
+        <div class="flex-box-container-1">
+            <div id="flex-box-result">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <h2>Challange 2 : Cats Generator</h2>
+        <button class="btn btn-success" id="catGenerator" onclick="GenerateCat()">Generate Cats</button>
+
+        <div class="flex-box-container-2" id="flexCatGen">
+            
+        </div>
+    </div>
+
+    <div class="container-3">
+        <h2>Challenge 3 : Rock, Paper, Scissor</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="http://images.clipartpanda.com/rock-clipart-clipart-harvestable-resources-rock.png" height="150" width="150" alt="" onclick="rpsGame(this)">
+            <img id="paper" src="http://images.clipartpanda.com/paper-clip-art-paper-clipart-11.jpg" height="150" width="150" alt="" onclick="rpsGame(this)">
+            <img id="scissor" src="http://images.clipartpanda.com/scissors-clip-art-scissors-clip-art-5.jpg" height="150" width="150" alt="" onclick="rpsGame(this)">
+        </div>
+
+    </div>
+
+    <div class="container-4">
+        <h2 id="ChangeMyColor">Challenge 4 : Change The Color of All Buttons</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">Yahoo!</button>
+            <button class="btn btn-warning">Google!</button>
+            <button class="btn btn-success">Facebook!</button>
+        </div>
+
+    </div>
+
+    <div class="container-5">
+        <h2>Challenge 5 : BlackJack</h2>
+        <h3 id="res-span"><span>Let's Go</span></h3>
+
+        <div class="flex-blackjack-row-1" id="flexbox-row-1">
+            <div id="your-box">
+                <h2>You: <span id="your-blackjack-score">0</span> </h2>
+            </div>
+
+            <div id="dealer-box">
+                <h2>Dealer: <span id="dealer-blackjack-score">0</span> </h2>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-2" id="flexbox-row-2">
+            <div>
+                <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">Hit</button>
+                <button class="btn-lg btn-warning mr-2" id="blackjack-stand-button">Stand</button>
+                <button class="btn-lg btn-danger" id="blackjack-Deal-button">Deal</button>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-3" id="flexbox-row-3">
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+
+                <tr>
+                    <td><span id="Wins">0</span></td>
+                    <td><span id="Losses">0</span></td>
+                    <td><span id="Draws">0</span></td>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+
+    <script src = "C:\Users\HP\Desktop\JAVASCRIPT\static\assets\script.js"></script>
+</body>
+</html>
